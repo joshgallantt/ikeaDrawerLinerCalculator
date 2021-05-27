@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+
+<STYLE>
+    #PageHead {
+      font-size: 22pt;
+      padding: 3px;
+      text-decoration: underline;
+    }
+
+    #PageTitle {
+      display: inline;
+    }
+
+    #PageSubTitle {
+      display: inline;
+      font-size: 16pt;
+      font-style: italic;
+      margin-left: 1em;
+    }
+
+
+    #PageNav A {
+      width: 900px;
+      margin: 0 auto;
+      text-decoration: none;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    table.PieceTable {
+      border: 1px solid #1C6EA4;
+      background-color: #EEEEEE;
+      width: 30%;
+      height: 86%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    table.PieceTable th {
+      border: 1px solid #AAAAAA;
+      padding: 3px 2px;
+    }
+
+    table.PieceTable tbody td {
+      font-size: 13px;
+    }
+
+    table.PieceTable tr:nth-child(even) {
+      background: #D0E4F5;
+    }
+
+    table.PieceTable thead {
+      background: #1C6EA4;
+      background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      border-bottom: 2px solid #444444;
+    }
+
+    table.PieceTable thead th {
+      font-size: 15px;
+      font-weight: bold;
+      color: #FFFFFF;
+      border-left: 2px solid #D0E4F5;
+    }
+
+    table.PieceTable thead th:first-child {
+      border-left: none;
+    }
+
+    table.PieceTable tfoot td {
+      font-size: 15px;
+    }
+
+    table.PieceTable tfoot .links {
+      text-align: right;
+    }
+
+    table.PieceTable tfoot .links a {
+      display: inline-block;
+      background: #1C6EA4;
+      color: #FFFFFF;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    #PieceTable {
+      table-layout: fixed border: 1px solid #1C6EA4;
+      background-color: #EEEEEE;
+      width: 370px;
+      height: 86%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    #PieceTable TBODY {
+      border: 1px solid gray;
+    }
+
+    #PieceTable TR TD {
+      border: 1px solid #AAAAAA;
+      padding: 3px 2px;
+      text-align: center;
+    }
+
+    #PieceTable THEAD TR TH {
+      background: #1C6EA4;
+      background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      border-bottom: 2px solid #444444;
+      font-size: 15px;
+      font-weight: bold;
+      color: #FFFFFF;
+      border-left: 2px solid #D0E4F5;
+    }
+
+    #ResultVisualContainer {
+      border: 1px solid black;
+      padding: 2px;
+      width: 100%;
+      height: 10em;
+      overflow: scroll;
+
+    }
+
+    #ResultVisualContainer .Piece {
+      border: 1px solid black;
+      white-space: nowrap;
+      font-size: 6 pt;
+      text-align: left;
+      height: 15px;
+      padding: 0px;
+      display: block;
+      background: #C0C0C0;
+
+    }
+
+    #ResultVisualContainer .Piece .Segment {
+      margin: 0px;
+      border-right: 1px solid black;
+      text-align: center;
+      height: 15px;
+      display: inline-block;
+      background: #FFFFFF;
+      font-size: 15px;
+    }
+
+    #ChangeStamp {
+      font-size: 8pt;
+      font-weight: normal;
+      text-align: bottom;
+    }
+
+  </STYLE>
+       
+<META http-equiv="Content-Type" 
+content="text/html; charset=windows-1252"><TITLE>Kitchen Drawer Liner 
+Calculator</TITLE>     
+<META name="author" content="Josh Gallant">     
+<META name="description" content="Calculates Drawer Liner Need">   
+<META name="GENERATOR" content="MSHTML 11.00.9600.19431"></HEAD>   
+<BODY>
+<DIV id="PageHead">
+<DIV id="PageTitle">Kitchen Drawer Liner Calculator</DIV>     </DIV>
+<P>This is a work in progress - <B>**allow activeX if using IE11**</B>       
+<BR>I'll probably not update this again until IE 11 gets phased out.</P>
+<P>For now, keep in your downloads folder and create a shortcut.</P>
+<DIV id="PageBody">
+<P><B>Step 1:</B> Select your liner type:</P>
+<DIV id="AvailabileMaterial"><INPUT name="size" id="AvailMaterial72" type="radio" 
+checked=""> VARIERA 800.128.53 (59" clear roll)<BR><INPUT name="size" id="AvailMaterial48" 
+type="radio"> PASSARP 103.200.01 (31" fabric mat)<BR></DIV>
+<P><B>Step 2:</B> Enter Quantities:</P>
+<DIV contenteditable="true">
+<TABLE id="PieceTable">
+  <THEAD>
+  <TR>
+    <TD style="display: none;">ID               </TD>
+    <TH>
+      <P>Quantity</P></TH>
+    <TH>For Drawers</TH>
+    <TH style="display: none;">For Drawer</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD style="display: none;">1</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">7"</TD>
+    <TD>12"</TD></TR>
+  <TR>
+    <TD style="display: none;">2</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">10.25"</TD>
+    <TD>15"</TD></TR>
+  <TR>
+    <TD style="display: none;">3</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">13.5"</TD>
+    <TD>18"</TD></TR>
+  <TR>
+    <TD style="display: none;">4</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">16.25"</TD>
+    <TD>21"</TD></TR>
+  <TR>
+    <TD style="display: none;">5</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">19.25"</TD>
+    <TD>24"</TD></TR>
+  <TR>
+    <TD style="display: none;">6</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">25.25"</TD>
+    <TD>30"</TD></TR>
+  <TR>
+    <TD style="display: none;">7</TD>
+    <TD contenteditable="true"></TD>
+    <TD style="display: none;">31"</TD>
+    <TD>36"</TD></TR></TBODY></TABLE></DIV>
+<P><B>Step 3:</B> Output Options:</P>
+<DIV><INPUT id="OutputInNewWindow" type="checkbox"> Output to new window (for 
+printing)</DIV>
+<P><B>Step 4:</B>&nbsp; <BUTTON onclick="Calculate();">CALCULATE</BUTTON>       
+</P>
+<P id=" "></P>
+<P></P>
+<P></P>
+<DIV id="ChangeStamp">revision 56 : Mon Sept 3 16:42:11 2019 (GMT) - 
+josh.gallant@ikea.com</DIV>
+<SCRIPT>
+        var material = {
+          '48': {
+            inches: 31.1,
+            description: "PASSARP 103.200.01"
+          },
+          '72': {
+            inches: 59.3,
+            description: "VARIERA 800.128.53"
+          },
+        };
+
+        function GetMaterialByLength(l) {
+          for (k in material)
+            if (material[k].inches == l)
+              return material[k];
+          return undefined;
+        }
+
+        function GetMaterialInputHTML(i) {
+          if (material[i] !== undefined)
+            return "<input type='checkbox' id='AvailMaterial" + i + "' " + (material[i].default ? " CHECKED" : "") + " /> " + material[i].description + ' (' + material[i].inches + '")';
+          else
+            return "";
+        }
+
+        function UpdateAvailableMaterial() {
+          d = document.getElementById('AvailabileMaterial');
+          d.innerHTML = "";
+          for (key in material) {
+            d.innerHTML += GetMaterialInputHTML(key) + "<br/>";
+          }
+        }
+
+
+        function GetSelectedMaterial() {
+          var stockLengths = Array();
+          for (i in material) {
+            if (document.getElementById('AvailMaterial' + i).checked)
+              stockLengths[stockLengths.length] = material[i].inches;
+          }
+          return stockLengths;
+        }
+
+        function print_r(o) {
+          m = "{\n";
+          for (k in o)
+            m += '  "' + k + '":' + o[k] + "\n";
+          m += '}';
+          return m;
+        }
+
+        function Calculate() {
+          var tbl = document.getElementById('PieceTable');
+          outHTML = '';
+
+          var piecesNeeded = Array();
+
+          if (tbl.rows.length < 2) {
+            outHTML += '<b>No pieces were set to be produced (step 4)</b>';
+          } else {
+
+
+            // Build an array of each necessary piece length
+            // Sort the array from smallest to largest
+            for (i = 1; i < tbl.rows.length; i++) {
+              var pId = parseInt(tbl.rows[i].cells[0].innerHTML);
+              var pQty = parseInt(tbl.rows[i].cells[1].innerHTML);
+              var pLen = parseFloat(tbl.rows[i].cells[2].innerHTML);
+              var startIdx = 0;
+
+              if (pId > 0) {
+
+                for (startIdx = 0; startIdx < piecesNeeded.length && piecesNeeded[startIdx][0] <= pLen; startIdx++);
+
+                for (j = 0; j < pQty; j++) {
+                  piecesNeeded.splice(startIdx, 0, Array(pLen, pId));
+                }
+              }
+            }
+
+            // Build an array of available material lengths, sorted in ascending order
+            var stockLengths = GetSelectedMaterial();
+
+            if (stockLengths.length == 0) {
+              outHTML += '<br /><br /><b>ERROR: liner not selected!</b><br />';
+            } else {
+              ;
+
+
+              // Ensure that the longest piece is shorter than the longest available material
+              if (piecesNeeded[piecesNeeded.length - 1][0] > stockLengths[stockLengths.length - 1]) {
+                outHTML += '<br /><br /><b>Cannot continue: the longest component required is longer than the longest material available.</b><br />';
+              } else {
+                var cutWidth = 0;
+
+                var pieces = Array();
+                // piece[?] = Array(pieceLength, usedLength, Array(componentIDs ...))
+
+                // Main loop
+                while (piecesNeeded.length > 0) {
+                  // Create a new piece of the largest material size
+                  var thisPiece = Array(
+                    stockLengths[stockLengths.length - 1],
+                    0,
+                    Array()
+                  );
+
+                  // Iterate through the needed components list
+                  for (j = piecesNeeded.length - 1; j >= 0; j--) {
+                    // Add component if it will fit, subtracting it from the list
+                    if (thisPiece[0] - thisPiece[1] - piecesNeeded[j][0] >= 0) {
+                      thisPiece[1] += piecesNeeded[j][0];
+                      thisPiece[2].splice(-1, 0, piecesNeeded[j]);
+                      piecesNeeded.splice(j, 1);
+
+                      // Adjust for cutting losses
+                      if (thisPiece[1] + cutWidth >= thisPiece[0])
+                        thisPiece[1] = thisPiece[0];
+                      else
+                        thisPiece[1] += cutWidth;
+                    }
+                  }
+
+                  // Attempt to reduce the length of the piece to the shortest material length that will accommodate
+                  for (j = stockLengths.length - 1; j >= 0; j--) {
+                    if (stockLengths[j] >= thisPiece[1])
+                      thisPiece[0] = stockLengths[j];
+                  }
+
+                  if (thisPiece[2].length == 0) {
+                    alert('Got stuck!');
+                    break;
+                  }
+                  pieces[pieces.length] = thisPiece;
+                }
+                // exit when no more pieces are needed
+
+                resultHTML = '<br /><b>Cutting Diagram:</b><div id="ResultVisualContainer">';
+
+                pieceSummaryList = {};
+
+                for (i = 0; i < pieces.length; i++) {
+                  t = 0;
+                  if (pieceSummaryList[pieces[i][0]] !== undefined)
+                    t = pieceSummaryList[pieces[i][0]];
+                  t++;
+                  pieceSummaryList[pieces[i][0]] = t;
+
+                  visual = '<div class="Piece" style="width: ' + (pieces[i][0] / 14) + 'in;">';
+
+                  for (j = 0; j < pieces[i][2].length; j++) {
+                    1
+                    resultHTML += '<p>';
+                    visual += '<div class="Segment" style="width: ' + (pieces[i][2][j][0] / 14) + 'in;">' + pieces[i][2][j][0] + '&quot;  ' + '</div>';
+                  }
+
+                  visual += '</div>';
+                  resultHTML += visual;
+                }
+
+                resultHTML += '</div>';
+                outHTML += resultHTML;
+
+                outHTML += "<br/><br/><b>Total product needed:</b>&nbsp;";
+                for (bl in pieceSummaryList)
+                  outHTML += "&nbsp;" + pieceSummaryList[bl] + " of " + GetMaterialByLength(bl).description + "<br/>";
+              }
+            }
+          }
+
+          var outPane = document.getElementById(' ');
+          outPane.innerHTML = outHTML;
+
+          if (document.getElementById('OutputInNewWindow').checked) {
+            w = window.open();
+            w.document.write(
+              '<html><head><title> </title></head>' +
+              '<style>' +
+              ' #ResultVisualContainer {}' +
+              ' #ResultVisualContainer .Piece {' +
+              '   border: 1px solid black;' +
+              '   white-space: nowrap;' +
+              '   font-size: 15pt;' +
+              '   text-align: left;' +
+              '   height: 15px;' +
+              '   padding: 0px;' +
+              '   display: block;' +
+              '	width: 900px;' +
+              '	margin: 0 auto;' +
+              '   background: #C0C0C0;' +
+              ' }' +
+              ' #ResultVisualContainer .Piece .Segment {' +
+              '	width: 900px;' +
+              '	margin: 0 auto;' +
+              '   border-right: 1px solid black;' +
+              '   text-align: center;' +
+              '   height: 15px;' +
+              '   display: inline-block;' +
+              '   background: #FFFFFF;' +
+              '   background: #FFFFFF;' +
+              '   font-size: 15px;' +
+              ' }' +
+              ' #h1 {' +
+              '   display: block;' +
+              '	width: 900px;' +
+              '	margin: 0 auto;' +
+              ' }' +
+              '</style></head><body>' +
+              '<center>' +
+              '<h1>Drawer Liner Cutting Guide</h1>' + outHTML +
+              '</center>' +
+              '</body></html>');
+          }
+        }
+
+      </SCRIPT>
+     </DIV></BODY></HTML>
